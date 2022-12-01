@@ -1,0 +1,19 @@
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+    margin: 0;
+  }
+  h1 {
+    color: #000000;
+  }
+  h2 {
+    color: #000000;
+  }
+  h3 {
+    border-bottom-style: outset;
+    color: #3e3535;
+  }
+  p {
+    color: #535252;
+  }
+  a {
+    color: #30080d;
+  }
