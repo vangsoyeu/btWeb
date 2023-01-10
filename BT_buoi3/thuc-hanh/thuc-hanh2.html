@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+table.a, th.a, td.a {
+    border: 1px solid black;
+}
+
+table.b {
+    border-collapse: collapse;
+}
+
+table.b, td.b, th.b {
+    border: 1px solid black;
+}
+
+table.c, td.c, th.c {
+    border: 1px solid black;
+}
+
+table.c {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th.c {
+    height: 50px;
+}
+table.d, td.d, th.d {
+    border: 1px solid black;
+}
+
+table.d {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th.d {
+    text-align: left;
+}
+
+td.d {
+    height: 50px;
+    vertical-align: bottom; 
+}
+
+th.d, td.d {
+    padding: 15px;
+}
+
+table.e {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th.e, td.e {
+    text-align: left;
+    padding: 8px;
+}
+
+tr.e:nth-child(even){background-color: #f2f2f2}
+
+th.e {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+<body>
+    <h2>Thêm đường viền cho bảng:</h2>
+
+    <table class="a">
+    <tr>
+        <th class="a">Họ đệm</th>
+        <th class="a">Tên</th>
+    </tr>
+    <tr>
+        <td class="a">Nguyễn Khắc</td>
+        <td class="a">Nhật</td>
+    </tr>
+    <tr>
+        <td class="a ">Nguyễn Thị</td>
+        <td class="a">Phương</td>
+    </tr>
+    </table>
+    <br>
+    <table class="b">
+        <tr>
+          <th class="b">Họ đệm</th>
+          <th class="b">Tên</th>
+        </tr>
+        <tr>
+          <td class="b">Phạm Anh</td>
+          <td class="b">Đới</td>
+        </tr>
+        <tr>
+          <td class="b">Nguyễn Thị</td>
+          <td class="b">Hằng</td>
+        </tr>
+      </table>
+
+
+    <h2>Sử dụng các thuộc tính width và height</h2>
+    <p>Thiết lập chiều rộng của bảng, và chiều cao của dòng tiêu đề trong bảng:</p>
+
+    <table class="c">
+    <tr>
+        <th class="c">Họ đệm</th>
+        <th class="c">Tên</th>
+        <th class="c">Tiết kiệm ($)</th>
+    </tr>
+    <tr>
+        <td class="c">Nguyễn Trung</td>
+        <td class="c">Tuyến</td>
+        <td class="c">110</td>
+    </tr>
+    <tr>
+        <td class="c">Nguyễn Thị Xuân</td>
+        <td class="c">Quỳnh</td>
+        <td class="c">170</td>
+    </tr>
+    <tr>
+        <td class="c">Nguyễn Thị Kim</td>
+        <td class="c">Cúc</td>
+        <td class="c">320</td>
+    </tr>
+    <tr>
+        <td class="c">Bùi Thành</td>
+        <td class="c">Trung</td>
+        <td class="c">280</td>
+    </tr>
+    </table>
+
+    <h2>Sử dụng thuộc tính text-align</h2>
+    <p>Thuộc tính dùng để thiết lập căn chỉnh nội dung bên trong ô của bảng theo chiều ngang (căn trái, phải, hoặc giữa):</p>
+
+    <table class="d">
+    <tr>
+        <th class="d">Họ đệm</th>
+        <th class="d">Tên</th>
+        <th class="d">Tiết kiệm ($)</th>
+    </tr>
+    <tr>
+        <td class="d">Nguyễn Trung</td>
+        <td class="d">Tuyến</td>
+        <td class="d">110</td>
+    </tr>
+    <tr>
+        <td class="d">Nguyễn Thị Xuân</td>
+        <td class="d">Quỳnh</td>
+        <td class="d">170</td>
+    </tr>
+    <tr>
+        <td class="d">Nguyễn Thị Kim</td>
+        <td class="d">Cúc</td>
+        <td class="d">320</td>
+    </tr>
+    <tr>
+        <td class="d">Bùi Thành</td>
+        <td class="d">Trung</td>
+        <td class="d">280</td>
+    </tr>
+    </table>
+
+    <h2>Thiết lập màu nền cho dòng tiêu đề của bảng</h2>
+    <table class="e">
+    <tr class="e">
+        <th class="e">Họ đệm</th>
+        <th class="e">Tên</th>
+        <th class="e">Tiết kiệm ($)</th>
+    </tr>
+    <tr class="e">
+        <td class="e">Nguyễn Trung</td>
+        <td class="e">Tuyến</td>
+        <td class="e">110</td>
+    </tr>
+    <tr class="e">
+        <td class="e">Nguyễn Thị Xuân</td>
+        <td class="e">Quỳnh</td>
+        <td class="e">170</td>
+    </tr>
+    <tr class="e">
+        <td class="e">Nguyễn Thị Kim</td>
+        <td class="e">Cúc</td>
+        <td class="e">320</td>
+    </tr>
+    <tr class="e">
+        <td class="e">Bùi Thành</td>
+        <td class="e">Trung</td>
+        <td class="e">280</td>
+    </tr>
+    </table>
+</body>
+</html>
